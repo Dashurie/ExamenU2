@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="PLATAFORMA I"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="EXAMEN PRÁCTICO"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/restaurante" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b_capturar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#9C27B0"
+            android:onClick="onClickCapturar"
+            android:text="Capturar"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/b_mostrar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FA3D3D"
+            android:text="Mostrar"
+            android:textColor="#FFFFFF"
+            android:onClick="onClickMostrar"/>
+
+        <Button
+            android:id="@+id/b_salir"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#03A9F4"
+            android:text="Salir"
+            android:textColor="#FFFFFF"
+            android:onClick="onClickSalir"/>
+    </LinearLayout>
+</LinearLayout>
